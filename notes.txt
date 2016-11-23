@@ -1,0 +1,11 @@
+Two Types of components:
+1. Presentation component
+2. Container component
+
+https://babeljs.io/repl
+
+API key openweathermap.org - 57dbc54f6e929bf934522a9a0f30c5a7
+
+Contact us
+locate us
+services
