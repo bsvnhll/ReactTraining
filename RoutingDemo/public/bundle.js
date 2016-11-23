@@ -60,6 +60,9 @@
 	var Weather = __webpack_require__(222);
 	var About = __webpack_require__(223);
 	var Examples = __webpack_require__(224);
+	var Contactus = __webpack_require__(225);
+	var Locateus = __webpack_require__(226);
+	var Services = __webpack_require__(227);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -69,6 +72,9 @@
 	    { path: '/', component: Main },
 	    React.createElement(Route, { path: 'about', component: About }),
 	    React.createElement(Route, { path: 'examples', component: Examples }),
+	    React.createElement(Route, { path: 'contactus', component: Contactus }),
+	    React.createElement(Route, { path: 'locateus', component: Locateus }),
+	    React.createElement(Route, { path: 'services', component: Services }),
 	    React.createElement(IndexRoute, { component: Weather })
 	  )
 	), document.getElementById('app'));
@@ -25288,6 +25294,21 @@
 	        'Examples'
 	      ),
 	      React.createElement(
+	        Link,
+	        { to: '/contactus', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	        'Contactus'
+	      ),
+	      React.createElement(
+	        Link,
+	        { to: '/locateus', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	        'Locateus'
+	      ),
+	      React.createElement(
+	        Link,
+	        { to: '/services', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	        'Services'
+	      ),
+	      React.createElement(
 	        'a',
 	        { href: '#/about' },
 	        ' goto about'
@@ -25363,6 +25384,72 @@
 	});
 
 	module.exports = Examples;
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Contactus = React.createClass({
+	  displayName: 'Contactus',
+
+	  render: function render() {
+	    return React.createElement(
+	      'h3',
+	      null,
+	      'Contactus Component'
+	    );
+	  }
+	});
+
+	module.exports = Contactus;
+
+/***/ },
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Locateus = React.createClass({
+	  displayName: 'Locateus',
+
+	  render: function render() {
+	    return React.createElement(
+	      'h3',
+	      null,
+	      'Locateus Component'
+	    );
+	  }
+	});
+
+	module.exports = Locateus;
+
+/***/ },
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Services = React.createClass({
+	  displayName: 'Services',
+
+	  render: function render() {
+	    return React.createElement(
+	      'h3',
+	      null,
+	      'Services Component'
+	    );
+	  }
+	});
+
+	module.exports = Services;
 
 /***/ }
 /******/ ]);
