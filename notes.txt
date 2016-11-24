@@ -15,3 +15,18 @@ locate us
 services
 
 Axios - 
+
+UI - http://foundation.zurb.com/
+
+Testing require:
+test runner - Karma
+test framework - mocha
+
+npm install -g karma
+npm install -g karma-cli
+npm install -g karma-htmlfile-reporter -- for generating the reports
+
+Redux:
+state (readonly)
+action (standard function)
+Reducer (state+action)
